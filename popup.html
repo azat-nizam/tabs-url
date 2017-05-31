@@ -1,12 +1,8 @@
+<!-- Copyright (c) 2016 Azat Nizameev -->
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
 	<head>
-		<title>Getting Started Extension's Popup</title>
+		<title>Parser for tabs url</title>
 		<style>
 			body {
 				font-family: Tahoma, sans-serif;
@@ -15,23 +11,19 @@
 			}
 		</style>
 
-		<!--
-		  - JavaScript and HTML must be in separate files: see our Content Security
-		  - Policy documentation[1] for details and explanation.
-		  -
-		  - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-		 -->
 		<script src="popup.js"></script>
 	</head>
 	<body>
+		<!-- Urls list block -->
 		<div id="status"></div>
 		<img id="image-result" hidden />
-		
+
+		<!-- Block to input urls -->
 		<div id="urls-block" style="display:none">
 			<textarea id='links' cols='50' rows='10'></textarea><br />
 			<a href='#' id='go-but'>Go</a>
 		</div>
-		
+
 		<p><a href="#" id="open-but">Open links</a></p>
 	</body>
 </html>

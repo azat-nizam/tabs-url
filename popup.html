@@ -7,23 +7,31 @@
 			body {
 				font-family: Tahoma, sans-serif;
 				font-size: 12px;
-				min-width: 400px;
+				min-width: 380px;
+			}
+
+			#status {
+				margin-top: 15px;
+			}
+
+			a {
+				line-height: 180%;
 			}
 		</style>
 
 		<script src="popup.js"></script>
 	</head>
 	<body>
-		<!-- Urls list block -->
-		<div id="status"></div>
-		<img id="image-result" hidden />
-
 		<!-- Block to input urls -->
-		<div id="urls-block" style="display:none">
+		<div id="urls-block">
 			<textarea id='links' cols='50' rows='10'></textarea><br />
-			<a href='#' id='go-but'>Go</a>
+			<a href='#' id='go-but'>Goooo</a> <a href="#" id="clear-but">Clear</a>
 		</div>
 
-		<p><a href="#" id="open-but">Open links</a></p>
+		<!-- Urls list block -->
+		<div id="status"></div>
+		<a href="#" id="copy-but">Copy</a>
+
+		<!-- <p><a href="#" id="open-but">Open links</a></p> -->
 	</body>
 </html>

@@ -1,5 +1,5 @@
 # tabs-url
-Parser for tabs url
+Chrome extension. Parser for tabs url
 
 INSTALLATION steps:
 1. Download extention
